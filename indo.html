@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <h1 id="demo">Wait 4 seconds.</h1>
+    <button onclick="hi()">Stop it!!</button>
+    <p>Stop it if you want</p>
+
+    <script>
+
+
+        const myTimeout = setTimeout(hello, 3000);
+
+        function hello() {
+            document.getElementById("demo").innerHTML = "idiot"
+        }
+
+        function hi() {
+            clearTimeout(myTimeout);
+        }
+    </script>
+</body>
+
+</html>
